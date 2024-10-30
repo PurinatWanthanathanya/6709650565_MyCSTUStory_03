@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&family=Oswald&family=Signika+Negative&family=Libre+Baskerville&family=Mate);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 24pt;
+}
+
+.navbar{
+    background-color: #333;
+    text-align: center;
+    padding: 1rem 0;
+        & .logo{
+            margin-bottom: 1rem;
+            & a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+
+        & .menu{
+            & li{
+                margin: .5rem 0;
+                & a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+}
+
+.article{
+    & .profile-image{
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    & #pooh{
+        width: 230px;
+        height: 230px;
+        border-radius: 50%;
+        /* ทำให้รูปกลม */
+        object-fit: cover;
+        /* ทำให้รูปพอดี */
+    }
+
+    & .name{
+        text-align: center;   
+        color: #2e24219c;
+        font-size: 18pt;
+        margin: 0;
+        font-family: Libre Baskerville;
+    }
+    
+    & .surname{
+        text-align: center;   
+        color: #2e24219c;
+        font-size: 18pt;
+        margin: 0;
+        font-family: Libre Baskerville;
+    }
+    
+    & .occupation{
+        text-align: center;   
+        color: #2e24219c;
+        font-size: 12pt;
+        margin: 1;
+        font-family: Signika Negative;
+        padding: .25rem 0;
+    }
+
+    & hr{
+        height: 1.5px;
+        background-color: #805211;
+        border: none;
+    }
+    
+    & h1{
+        color:#551806cc;
+        font-size: 23pt;
+        margin: 0;
+        font-family: Anton;
+    }
+    
+    & h2{
+        color:#804533cc;
+        font-size: 20pt;
+        font-family: Anton;
+        text-align: center;
+    }
+    
+    & h3{
+        color: #631f0b9c;
+        font-size: 16pt;
+        margin: 0;
+        font-family: Oswald;
+    }
+    
+    & h4{
+        color: #585858;
+        font-size: 14pt;
+        font-family: Signika Negative;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    & .description{
+        color:#080808cc;
+        font-size: 11pt;
+        padding: 1rem .5rem;
+        font-family: Signika Negative;
+    }
+    
+    & .motto{
+        color:#1b0904cc;
+        font-size: 15pt;
+        text-align: center;
+        font-family: Mate;
+    }
+    
+    & .introbackground{
+        padding-top: 2rem;
+    }
+
+    & .introductionbox {
+        max-width: 100%;
+        display: flex;
+        justify-content: center; 
+        padding: 1rem 0;
+        box-sizing: border-box;
+    }
+    
+    & .introductionbox video {
+        width: 100%;
+        height: auto; 
+        max-width: 640px; 
+        border-radius: 10px; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    & .gallery-container {
+        overflow: hidden;
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+    
+    & .gallery {
+        display: flex;
+        gap: 20px;
+        transition: transform 0.5s ease;
+        white-space: nowrap;
+        will-change: transform;
+        animation: scroll 20s linear infinite;
+    }
+    
+    & .gallery-items {
+        flex: 0 0 auto;
+        width: 120px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    
+    & .gallery-items img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & table {
+        width: 100%;
+        border: 3px solid #aa7831;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: #ffffff;
+    }
+    
+    & .tabletext {
+        color: #551806cc;
+        font-size: 8pt;
+        margin: 0;
+        font-family: 'Mate', serif;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    & .tableimage {
+        width: 100%;
+        max-width: 400px;
+        max-height: 100px;
+        object-fit: cover;
+        padding: 10px;
+    }
+    
+    & .togglecontainer {
+        margin-bottom: 20px;
+    }
+
+    & .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 1600px;
+        padding-top: 56.25%; /* อัตราส่วน 16:9 */
+        margin: auto;
+    }
+    
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+}
+
+@keyframes scroll {
+    /* ทำให้ภาพเลื่อนไปด้ายขวา */
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+aside, section{
+    padding: 1rem;
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top:0;
+        height: 100vh;
+        width: 70%;
+        
+        & .logo{
+            margin-bottom: 0;
+        }
+
+        & .menu{
+            display: flex;
+            flex-direction: column; /*แนวตั้ง*/
+            padding: 1rem 0;
+        }
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: .25fr 1fr;
+        grid-template-areas: 
+        "content1 content2" /* แถวแรก */
+        "content3 aside";
+        padding: 0;
+    }
+
+    aside {
+        grid-area: aside; /* ช่องที่ 4 */
+    }
+    
+}
+
+@media screen and (min-width: 1020px) {
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top:0;
+        height: 100vh;
+        width: 70%;
+        
+        & .logo{
+            margin-bottom: 0;
+        }
+
+        & .menu{
+            display: flex;
+            flex-direction: column; /*แนวตั้ง*/
+            padding: 1rem 0;
+        }
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        padding: 0;
+        grid-template-areas: 
+        "nav content2 aside";
+        padding: 0;
+    }
+
+    aside {
+        grid-area: aside; 
+    }
+}
+    
