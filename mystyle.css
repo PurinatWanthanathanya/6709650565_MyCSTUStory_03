@@ -375,7 +375,7 @@ footer{
         grid-template-columns: 1fr 1fr;
         padding: 0;
         grid-template-areas: 
-        "nav content2"
+        "nav content"
         "nav aside";
         padding: 0;
     }
@@ -423,6 +423,15 @@ footer{
                 max-width: 600px;
                 max-height: 600px;
             }
+
+            & .gallery-container{
+                height: 200px;
+            }
+
+            & .gallery-items{
+                width: 170px;
+                height: 200px;
+            }
     }
     
     aside{
@@ -438,13 +447,17 @@ footer{
 
 @media screen and (min-width: 1020px) {
 
+    header{
+        font-size: 50pt;
+    }
     .navbar{
         display: flex;
         justify-content: center;
         position: sticky;
         top:0;
         height: 100vh;
-        width: 70%;
+        width: 90%;
+        grid-area: nav;
         
         & .logo{
             margin-bottom: 0;
@@ -459,15 +472,82 @@ footer{
 
     main{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-columns: 1fr 2fr 0.5fr;
         padding: 0;
         grid-template-areas: 
         "nav content2 aside";
         padding: 0;
     }
 
-    aside {
-        grid-area: aside; 
+    .article{
+        max-width: 1300px;
+            & #pooh{
+                width: 300px;
+                height: 300px;
+            }
+
+            & .name{
+                font-size: 28pt;
+            }
+
+            & .surname{
+                font-size: 28pt;
+            }
+
+            & .occupation{
+                font-size: 22pt;
+            }
+
+            & h1{
+                font-size: 38pt;
+            }
+
+            & h2{
+                font-size: 36pt;
+            }
+
+            & h3{
+                font-size: 34pt;
+            }
+
+            & h4{
+                font-size: 32pt;
+            }
+
+            & .description{
+                font-size: 18pt;
+            }
+
+            & .tabletext{
+                font-size: 16pt;
+            }
+
+            & .tableimage {
+                width: 100%;
+                max-width: 600px;
+                max-height: 600px;
+            }
+
+            & .gallery-container{
+                height: 300px;
+            }
+
+            & .gallery-items{
+                width: 280px;
+                height: 300px;
+            }
+
+            
     }
+
+    aside {
+        display: flex;
+        grid-area: aside; 
+        justify-content: center;
+        text-align: center;
+        margin: 10px;
+
+    }
+
 }
     
