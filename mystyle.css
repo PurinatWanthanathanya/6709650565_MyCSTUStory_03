@@ -518,6 +518,17 @@ footer{
                 font-size: 18pt;
             }
 
+            & .introductionbox{
+                width: 100%;
+                max-width: 1400px;
+            }
+
+            & .introductionbox video{
+                width: 100%;
+                max-width: 1400px;
+                height: 600px;
+            }
+
             & .tabletext{
                 font-size: 16pt;
             }
