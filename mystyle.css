@@ -474,7 +474,15 @@ footer{
         & .menu{
             display: flex;
             flex-direction: column; /*แนวตั้ง*/
-            padding: 1rem 0;
+            padding: 1rem 1rem;
+        }
+
+        & .button{
+            font-size: 12pt;
+        }
+
+        & .buttontext{
+            font-size: 20pt;
         }
     }
 
