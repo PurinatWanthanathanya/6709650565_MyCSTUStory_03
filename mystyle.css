@@ -368,6 +368,14 @@ footer{
             flex-direction: column; /*แนวตั้ง*/
             padding: 1rem 0;
         }
+        & .button{
+            font-size: 10pt;
+            margin: 1rem;
+        }
+
+        & .buttontext{
+            font-size: 14pt;
+        }
     }
 
     main {
@@ -479,6 +487,7 @@ footer{
 
         & .button{
             font-size: 12pt;
+            margin: 0;
         }
 
         & .buttontext{
